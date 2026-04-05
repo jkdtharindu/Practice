@@ -4,30 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apparel Professional</title>
-</head>
     <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <h1>Tharindu Jayanetti<br>Personal Portfolio</h1>
-    <p>I am an Assistant Merchandiser in Apparel Industry - Sri Lanka <br> Experienced 12 years</p>
-    <a href="https://www.linkedin.com/in/tharindu-jayanetti-06668167/" target="_blank">LinkedIn</a>
-    <img src="images/tharinduLinked.jpg" alt="Profile photo" width="200">
-    <ul>
-        <li>Home</li>
-        <li>Experiences</li>
-        <li>Certifications</li>
-        <li>Skills</li>
-        <li>CV</li>
-        <li>Contact</li>
-    </ul>
-    <div>
-        <h2>Training Sessions</h2>
-        <p>Product development, supply chain management, quality control, and sustainability practices.</p> 
-    </div>
-    <form>
-    <input type="text" placeholder="Enter your name">
-    <input type="email" placeholder="Enter your email">
-    <textarea placeholder="Enter your message"></textarea>
-    <button type="submit">Send Message</button>
-    </form>
+    <header>
+        <nav aria-label="Main">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#training">Training</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Tharindu Jayanetti<br>Personal Portfolio</h1>
+            <p>I am an Assistant Merchandiser in Apparel Industry - Sri Lanka <br> Experienced 12 years</p>
+            <a href="https://www.linkedin.com/in/tharindu-jayanetti-06668167/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <p><img src="images/tharinduLinked.jpg" alt="Profile photo" width="200"></p>
+        </section>
+
+        <section id="experiences">
+            <h2>Experiences</h2>
+            <p class="data-hint">Content is loaded from <code>portfolio-data.js</code> — edit that file to update this list.</p>
+            <div id="experiences-root"></div>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <p class="data-hint">Content is loaded from <code>portfolio-data.js</code> — edit that file to update this list.</p>
+            <div id="certifications-root"></div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>Merchandising, product development, supply chain coordination, quality control, and related tools.</p>
+        </section>
+
+        <section id="cv">
+            <h2>CV</h2>
+            <p><a href="cv.pdf" download>Download CV (PDF)</a> — place your file as <code>cv.pdf</code> next to this page, or update the link.</p>
+        </section>
+
+        <section id="training">
+            <h2>Training Sessions</h2>
+            <p>Product development, supply chain management, quality control, and sustainability practices.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <input type="text" name="name" placeholder="Enter your name" autocomplete="name" required>
+                <input type="email" name="email" placeholder="Enter your email" autocomplete="email" required>
+                <textarea name="message" placeholder="Enter your message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <script src="portfolio-data.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
